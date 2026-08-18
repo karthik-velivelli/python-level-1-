@@ -1,0 +1,68 @@
+morse_code = input("Morse Code:").split(" ")
+text = "" 
+for code in morse_code: 
+    match code:
+        case ".-":
+           text += "a" 
+        case "-...": 
+           text += "b"
+        case "-.-.":
+           text +="c"
+        case "-..": 
+           text +="d"
+        case ".": 
+           text +="e"
+        case "..-.":
+           text +="f"
+        case "--.":
+           text +="g"
+        case "....":
+            text +="h"
+        case "..":
+            text +="i"
+        case ".---":
+            text +="j"
+        case "-.-":
+            text +="k"
+        case ".-..":
+            text +="l"
+        case "--":
+            text +="m"
+        case "-.":
+            text +="n"
+        case "---":
+            text +="o"
+        case ".--.":
+            text +="p"
+        case "--.-":
+            text +="q"
+        case ".-.":
+            text +="r"
+        case "...":
+            text +="s"
+        case "-":
+            text +="t"
+        case "..-":
+            text +="u"
+        case "...-":
+            text +="v"
+        case ".--":
+            text +="w"
+        case "-..-":
+            text +="x"
+        case "-.--":
+            text +="y"
+        case "--..":
+            text +=""
+        case "/":
+            text += " "
+        case _:
+            text += "#"
+print(f"Text: {text}")
+        
+    
+    
+    
+    
+
+
