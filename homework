@@ -1,0 +1,6 @@
+def total_price(*prices: float, discount: float = 0) -> float:
+    """Calculates the total sum of prices and applies a percentage discount."""
+    total = sum(prices)
+    discount_amount = total * (discount / 100)
+    return total - discount_amount
+
