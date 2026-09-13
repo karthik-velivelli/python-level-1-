@@ -1,0 +1,10 @@
+from tabulate import tabulate
+
+book = {
+    "title": "Wonder",
+    "author": "R.J. Palacio",
+    "year": 2012,
+    "available": True
+}
+
+print(tabulate(book.items(), headers=["Field", "Value"], tablefmt="grid"))
