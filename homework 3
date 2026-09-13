@@ -1,0 +1,6 @@
+scores = {"Ann": 88, "Ben": 91}
+print(scores.get("Cal", 0))
+
+
+
+
