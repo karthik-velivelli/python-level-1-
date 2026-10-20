@@ -1,0 +1,1 @@
+print("these are  session excercises")
