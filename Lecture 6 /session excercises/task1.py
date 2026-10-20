@@ -33,13 +33,23 @@ class Student:
         self.marks = new_marks
     def set_grade(self,new_grade):
         self.grade = new_grade
+
+
+    def get_roll_number(self):
+        return self.roll_number
+    def get_name(self):
+        return self.name
+    def get_marks(self):
+        return self.marks
+    def get_grade(self):
+        return self.grade
         
         
     def display(self): 
-        print(f"Roll Number: {self.roll_number}")
-        print(f"Name: {self.name}")
-        print(f"Marks: {self.marks}")
-        print(f"Grade: {self.grade}")
+        print(f"Roll Number: {self.get_roll_number()}")
+        print(f"Name: {self.get_name()}")
+        print(f"Marks: {self.get_marks()}")
+        print(f"Grade: {self.get_grade()}")
 
 student = Student() 
 print("Enter you're Details Below: ")
