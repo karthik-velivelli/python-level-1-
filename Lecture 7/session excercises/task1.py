@@ -13,7 +13,7 @@ class BikeV1(BikeV0):
         self.battery = battery
 
     def charge_battery(self):
-        self.battery = 100[
+        self.battery = 100
 
     def check_battery(self):
         return self.battery
