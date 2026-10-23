@@ -34,12 +34,12 @@ class AudioBook(EBook):
         print(f"Listening Time: {self.listening_hours():.1f} hours")
 
 
-# Testing Sample Input 1
+
 audio1 = AudioBook("Tales of the River", "Meera Das", 180, "Arun Rao", 150)
 audio1.describe_audiobook()
 
-print()  # Blank line between tests
+print()  
 
-# Testing Sample Input 2
+
 audio2 = AudioBook("Night Train", "Kabir Sen", 95, "Isha Nair", 90)
 audio2.describe_audiobook()

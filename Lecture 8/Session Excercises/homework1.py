@@ -30,12 +30,12 @@ class ComboMeal(Burger, Drink):
         print(f"Combo Price: {self.combo_price()} rupees")
 
 
-# Testing Sample Input 1
+
 combo1 = ComboMeal("Veg Burger", 120, "Cola", 60)
 combo1.display_combo()
 
-print()  # Blank line between tests
+print()  # 
 
-# Testing Sample Input 2
+
 combo2 = ComboMeal("Cheese Burger", 150, "Lemonade", 40)
 combo2.display_combo()

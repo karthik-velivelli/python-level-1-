@@ -47,12 +47,12 @@ class ClubMember(Singer, Dancer, Painter):
         print(f"Grade: {self.grade()}")
 
 
-# Testing Sample Input 1
+
 member1 = ClubMember("Diya", 7, 8, 6)
 member1.display_member()
 
-print()  # Blank line between tests
+print() 
 
-# Testing Sample Input 2
+
 member2 = ClubMember("Kabir", 4, 3, 5)
 member2.display_member()

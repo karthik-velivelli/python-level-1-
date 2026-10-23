@@ -39,12 +39,12 @@ class InsuredPackage(ExpressPackage):
         print(f"Final Bill: {self.final_bill()}")
 
 
-# Testing Sample Input 1
+
 parcel1 = InsuredPackage("Asha", 4, 50, 10)
 parcel1.display_bill()
 
-print()  # Blank line between tests
+print()  
 
-# Testing Sample Input 2
+
 parcel2 = InsuredPackage("Ravi", 10, 80, 20)
 parcel2.display_bill()
