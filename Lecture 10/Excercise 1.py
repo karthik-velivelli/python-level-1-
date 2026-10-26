@@ -1,6 +1,6 @@
 class Temperature:
     def __init__(self, celsius):
-        if type(celsius) == int or type(celsius) == float: 
+        if isinstance(celsius, (int, float)):
             self.celsius = celsius
         else:
             print("Cannot assign value. Please enter a integer or a float value")
@@ -8,7 +8,14 @@ class Temperature:
         self.celsius = celsius
 
     def __add__(self, other):
-        return Temperature(self.celsius + other.celsius)
+        if isinstance(other, (int, float)):
+            return Temperature(self.celsius + other)
+        elif isinstance(other, Temperature):
+            return Temperature(self.celsius + other.celsius)
+        else:
+            print(f"Error, + is not supported between {type(self)} and {type(other)}")
+
+                  
 
     def __sub__(self, other):
         return Temperature(self.celsius - other.celsius)
