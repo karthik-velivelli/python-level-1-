@@ -1,5 +1,10 @@
 class Temperature:
     def __init__(self, celsius):
+        if type(celsius) == int or type(celsius) == float: 
+            self.celsius = celsius
+        else:
+            print("Cannot assign value. Please enter a integer or a float value")
+            self.celsius = 0
         self.celsius = celsius
 
     def __add__(self, other):
@@ -22,6 +27,24 @@ class Temperature:
 
     def __pow__(self, other):
         return Temperature(self.celsius ** other.celsius)
+
+    def __eq__(self, other):
+        return (self.celsius == other.celsius)
+
+    def __ne__(self, other):
+        return (self.celsius != other.celsius)
+    
+    def __lt__(self, other):
+        return (self.celsius < other.celsius)
+
+    def __gt__(self, other):
+        return (self.celsius > other.celsius)
+
+    def __le__(self, other):
+        return (self.celsius <= other.celsius)
+
+    def __ge__(self, other):
+        return (self.ceslsius >= other.celsius)
 
 
 
